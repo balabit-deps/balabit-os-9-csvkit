@@ -1,0 +1,9 @@
+Document: csvkit
+Title: csvkit Documentation
+Author: Christopher Groskopf
+Abstract: This is the reference documentation for csvkit.
+Section: Text
+
+Format: HTML
+Index: /usr/share/doc/csvkit/html/index.html
+Files: /usr/share/doc/csvkit/html/*.html

@@ -1,0 +1,102 @@
+csvkit (1.0.6-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.0.6
+  * Refreshing patches.
+  * Updating copyright years.
+  * Adding versioned depends on python3-agatedbf.
+  * Bumping debhelper-compat (no changes).
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 14 Sep 2021 02:10:47 -0400
+
+csvkit (1.0.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * Adding missing versioned dependency on python3-agate (Closes: #969550).
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 20 Oct 2020 11:02:16 -0400
+
+csvkit (1.0.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.0.5
+  * Refreshing No-privacy-breach.patch.
+  * Requires python3-agatesql (>= 0.5.3).
+  * Updating debian/copyright.
+  * Adding 'Rules-Requires-Root: no'.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 18 Aug 2020 02:02:12 -0400
+
+csvkit (1.0.2-2) unstable; urgency=medium
+
+  * Team upload.
+  * Producing manpages with help2man.
+  * Removing stdin_out.csv from Python package.
+  * Removing csvkit.egg-info in dh_auto_clean.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 28 Nov 2019 02:23:57 -0500
+
+csvkit (1.0.2-1) unstable; urgency=medium
+
+  * Drop git-dpm and leave patches unapplied
+  * Add recommended gbp configuration
+  * Source future releases from GitHub
+  * New upstream version 1.0.2 (Closes: #857352)
+  * Drop the patch queue, no longer required
+  * Update copyright information
+    - Use HTTPS for the Format URI
+    - Bump upstream copyright years
+    - Rename the MIT license to Expat
+  * Reformat the control file using cme
+  * Move source package to utils section
+  * Provide the cli in new binary package
+    - New binary package: csvkit
+    - New build dependencies: python3-agate{,dbf,excel,sql} and python3-six
+    - Remove python-csvkit since agate is only available for Python 3
+    - Sychronize the package descriptions with upstream
+    - Use pybuild as the build system
+  * Provide the docs in new binary package
+    - New binary package: csvkit-doc
+    - New build dependencies: python3-doc and python3-sphinx{,rtd-theme}
+    - New patches: Use-the-packaged-docs.patch and No-privacy-breach.patch
+    Thanks to Craig Sanders for reporting (Closes: #850583)
+  * Enable testing during build
+  * Add autopkgtest test suite
+  * Bump the debhelper version to 11
+  * Bump the standards version to 4.1.3
+  * Support the nocheck and nodoc build profiles
+  * Adopt the package
+    - Transfer maintenance to the Debian Science Team
+    - Add myself to the list of uploaders
+    - Add myself to the copyright holders
+    - Move packaging to salsa.debian.org (Closes: #888075)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 01 Feb 2018 09:59:49 +0000
+
+csvkit (0.9.1-3) unstable; urgency=medium
+
+  [ Sandro Tosi ]
+  * debian/control
+    - adjust Vcs-Browser to DPMT standards
+    - explicitly add python3-pkg-resources to deps on python3-csvkit, needed to
+      run CLI utils; Closes: #820694
+    - bump Standards-Version to 3.9.8 (no changes needed)
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 18 Apr 2016 00:25:56 +0100
+
+csvkit (0.9.1-2) unstable; urgency=medium
+
+  * debian/patches/dependencies-greater-or-equal.patch
+    - set python modules dependecies to 'greater or equal' instead of strictly
+      'equal'; patch by Alexandre Viau; Closes: #790913
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 18 Aug 2015 07:54:38 +0100
+
+csvkit (0.9.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #790699)
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 30 Jun 2015 18:25:47 -0400
